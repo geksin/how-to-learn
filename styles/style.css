@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+div {
+  border: red 1px solid;
+}
+
+a:hover {
+color: red;
+}
+
 .page {
   margin:0;
   padding: 0;
@@ -54,10 +62,6 @@ body {
  top:30px;
  left:64px;
  z-index: 2;
-}
-
-.logo_place_footer {
-  
 }
 
 .header__title {
@@ -187,14 +191,19 @@ margin: 30px 0;
 .table {
   width: 1100px;
   margin: 0 auto 100px;
-  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  flex-direction:column-reverse;
 }
 
-.table__cell {
-  width: 250px;
+.table__line {
   margin-top: 60px;
+}
+
+
+.table__cell {
+  margin-top:60px;
+  width: 250px;
+  vertical-align: top;
 }
 
 .table__heading {
@@ -324,18 +333,25 @@ margin: 30px 0;
 
 .footer__columns {
   width: 90%;
-  flex-basis: 711px;
   margin: 60px auto 40px;
-  flex-direction: column;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer__columns_content_copyright {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
 }
-.logo__place_footer {
 
+.logo__place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  height: 35px;
+  width: 183px;
 }
+
 .footer__author {
   line-height: 25px;
   font-size: 18px;
@@ -365,4 +381,5 @@ margin: 30px 0;
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  padding-right: 10px;
 }
