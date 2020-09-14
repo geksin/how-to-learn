@@ -178,6 +178,7 @@ margin: 30px 0;
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  list-style-type: none;
 }
 
 .table__heading {
@@ -278,7 +279,6 @@ margin: 30px 0;
   height: 877px;
   z-index: -1;
   background: url(../images/kaufman-triangle.svg) #1f1f1f no-repeat;
-  background-size: cover;
   top: 0;
 }
 
@@ -294,14 +294,13 @@ margin: 30px 0;
   margin: 60px auto 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   flex-direction: column;
-  display: flex;
-  flex-basis: 711px;
   justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .footer__author {
@@ -309,15 +308,16 @@ margin: 30px 0;
   font-size: 18px;
   font-weight: normal;
   margin:18px 0;
-  
-}
-.footer__column_content-info {
-  display: flex;
-  flex-direction: column;
 }
 
-.footer__column_content-social {
+.footer__column_content_info {
   flex-direction: column;
+  width: auto;
+}
+
+.footer__column_content_social {
+  flex-direction: column;
+  width: auto;
 }
 
 .footer__column-heading {
@@ -326,14 +326,18 @@ margin: 30px 0;
   font-weight: 700;
   margin:0 0 20px 0;
 }
+
 .footer__column-links {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__column-link {
+  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  display: block;
-  flex-direction: column;
   color: #f2f2f2;
-  text-decoration: none;
 
 }
 
