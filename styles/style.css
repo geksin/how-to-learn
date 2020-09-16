@@ -1,4 +1,6 @@
 
+  /* спасибо за комментарии к работе! */
+
 .header__link:hover, .feynman__link:hover, .footer__column-links:hover {
   color:red;
 }
@@ -44,6 +46,8 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
+  width: 184px; 
+  /* размер лого в футере на 1 пиксель больше, до этого обрезалось */
 }
 
 .header__title {
@@ -58,6 +62,7 @@
 }
 
 .header__subtitle {
+  margin:0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
@@ -137,8 +142,8 @@ z-index: 0;
   font-weight: 400;
 
 }
-.two-columns__span {
-  font-weight: 500;
+.two-columns__span-accent {
+  font-weight: 700;
   line-height: 34px;
   font-size: 24px;
 }
@@ -168,6 +173,7 @@ margin: 30px 0;
 }
 
 .table {
+  padding-left:0;
   width: 1100px;
   margin: 0 auto 100px;
   flex-wrap: wrap;
@@ -245,12 +251,12 @@ margin: 30px 0;
   position: relative;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   margin: 90px auto 0;
   z-index: 1;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   z-index: 1;
 }
 
@@ -279,6 +285,7 @@ margin: 30px 0;
   height: 877px;
   z-index: -1;
   background: url(../images/kaufman-triangle.svg) #1f1f1f no-repeat;
+  background-size: cover;
   top: 0;
 }
 
@@ -289,16 +296,22 @@ margin: 30px 0;
   display: flex;
 }
 
-.footer__column {
+.footer__columns {
   width: 90%;
   margin: 60px auto 40px;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
+  
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 .footer__column_content_copyright {
-  flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
 }
@@ -311,13 +324,10 @@ margin: 30px 0;
 }
 
 .footer__column_content_info {
-  flex-direction: column;
-  width: auto;
 }
 
 .footer__column_content_social {
-  flex-direction: column;
-  width: auto;
+
 }
 
 .footer__column-heading {
