@@ -5,7 +5,7 @@
   }
   
   .logo_place_header {
-   background-image: url(../images/logo_place_header.svg);
+   background-image: url(../../images/logo/logo_place_header.svg);
    position: absolute;
    top:30px;
    left:64px;
@@ -13,7 +13,6 @@
   }
   
   .logo_place_footer {
-    background-image: url(../images/logo_place_footer.svg);
+    background-image: url(../../images/logo/logo_place_footer.svg);
     width: 184px; 
-    /* размер лого в футере на 1 пиксель больше, до этого обрезалось */
   }
