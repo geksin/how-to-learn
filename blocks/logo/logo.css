@@ -3,16 +3,3 @@
     height: 32px;
     width: 183px;
   }
-  
-  .logo_place_header {
-   background-image: url(../../images/logo/logo_place_header.svg);
-   position: absolute;
-   top:30px;
-   left:64px;
-   z-index: 2;
-  }
-  
-  .logo_place_footer {
-    background-image: url(../../images/logo/logo_place_footer.svg);
-    width: 184px; 
-  }

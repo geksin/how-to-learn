@@ -8,10 +8,10 @@
     font-weight: normal;
     margin: 0;
     padding: 0;
+    transition: ease-in-out 400ms;
     color: #2f80ed;
   }
 
 .feynman__link:hover {
     opacity: 0.3;
-    transition: ease-in-out 200ms;
   }

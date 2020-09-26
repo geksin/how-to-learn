@@ -1,8 +1,8 @@
 .header__link {
-    text-decoration: none;
-    color: #2f80ed;
-  }
-  .header__link:hover {
-    opacity: 0.3;
-    transition: ease-in-out 200ms;
-  }
+  text-decoration: none;
+  color: #2f80ed;
+  transition: ease-in-out 400ms;
+}
+.header__link:hover {
+  opacity: 0.3;
+}

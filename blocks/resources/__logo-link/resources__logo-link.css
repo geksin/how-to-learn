@@ -1,0 +1,9 @@
+.resources__logo-link {
+    color: #2f80ed;
+    text-decoration: none;
+    transition: ease-in-out 400ms;
+}
+
+.resources__logo-link:hover {
+    opacity: 0.3;
+}

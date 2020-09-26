@@ -4,9 +4,9 @@
     font-weight: 400;
     color: #2f80ed;
     text-decoration: none;
+    transition: ease-in-out 400ms;
 }
 
 .khan__buy-link:hover {
     opacity: 0.3;
-    transition: ease-in-out 200ms;
-  }
+}
